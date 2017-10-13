@@ -46,6 +46,7 @@ class Battlefield {
     const opponent = !this.turn ? this.p2 : this.p1;
     this.turn = !this.turn;
 
+    // collect dead ships
     const deadShips = opponent.ships
       .filter(ship => ship.health === 0 )
       .map(({ size, type, x, y, w, h }) => ({ size, type, x, y, w, h }))
@@ -80,7 +81,6 @@ class Battlefield {
           shipsLeft++
         }
       })
-      console.log(`${opponent.name} has ${shipsLeft} ships left!`);
 
       // check for win condition
       const stillAlive = opponent.ships.reduce((alive, ship) => alive ? alive : ship.health > 0, false);

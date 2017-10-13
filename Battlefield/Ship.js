@@ -83,8 +83,8 @@ class Ship {
     const bounds = {
       top: this.y,
       left: this.x,
-      bottom: this.y + this.h,
-      right: this.x + this.w
+      bottom: this.y + this.h -1,
+      right: this.x + this.w -1
     }
 
     return (
