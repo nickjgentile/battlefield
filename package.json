@@ -1,0 +1,14 @@
+{
+  "name": "battlefield",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Battlefield/Battlefield.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Gus Suarez <gus@mythril.co>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.8.0"
+  }
+}
